@@ -1,5 +1,5 @@
 //
-//  Easy+Array.swift
+//  Easy+Collection.swift
 //  EaseSwifty
 //
 //  Created by 董招兵 on 2017/8/6.
@@ -8,6 +8,40 @@
 
 import Foundation
 
+// MARK: - Dictionary
+public extension Dictionary {
+
+    public var jsonValue : String? {
+        get {
+            if let data = Data.dataWithObject(self) {
+                let string = data.stringValue()
+                return string
+            } else {
+                return nil
+            }
+        }
+    }
+
+    public mutating func set(object : Value?,forKey key :Key) {
+        guard object != nil else { return }
+        self[key]    = object
+    }
+
+    public mutating func object(forKey key : Key) -> Value? {
+        return self[key]
+    }
+
+    public mutating func remove(forKey key : Key) {
+        self.removeValue(forKey: key)
+    }
+
+    public mutating func contains(_ key : Key) -> Bool {
+        return object(forKey: key) != nil
+    }
+
+}
+
+//MARK: Array
 
 public extension Array {
 
@@ -52,25 +86,25 @@ public extension Array where Element : Equatable {
 public extension Array where Element : Equatable {
 
     /// 移除数组下标的元素 安全判断不可越界
-    public mutating func safe_remove(at index: Int) {
+    public mutating func remove(at index: Int) {
         guard !isEmpty else { return }
         guard (index <= self.count - 1) else { return }
         remove(at: index)
     }
     /// 移除数组中单个元素 根据元素
-    public mutating func safe_remove(object : Element) {
+    public mutating func remove(object : Element) {
         let array               = transformMutableArray()
         array.remove(object)
         self                    = array as! [Element]
     }
     /// 批量从数组中移除元素
-    public  mutating func safe_remove(objects: [Element]) {
+    public  mutating func remove(objects: [Element]) {
         for obj in objects {
-            safe_remove(object: obj)
+            remove(object: obj)
         }
     }
     /// 移除某个范围的数组元素
-    public mutating func safe_remove(in range: FoundationRange) {
+    public mutating func remove(in range: FoundationRange) {
         if let  subRange  = rangeIndex(from: range) {
             removeSubrange(subRange)
         }
@@ -82,23 +116,23 @@ public extension Array where Element : Equatable {
 public extension Array where Element : Equatable {
 
     /// 在数组某个位置插入一个元素
-    public mutating func safe(insert object : Element ,at index:Int) {
+    public mutating func insert(object : Element ,at index:Int) {
         guard !isEmpty else { return }
         guard index <= self.count else { return }
         insert(object, at: index)
     }
     /// 替换数组某个下标的元素
-    public mutating func safe(replace object : Element , at index : Int) {
+    public mutating func replace(object : Element , at index : Int) {
         guard !isEmpty else { return }
         guard (index <= self.count - 1) else { return }
         self[index] = object
     }
 
     /// 在数组中间任意位置插入一个数组
-    public mutating func safe(insert objects : [Element], at index : Int) {
+    public mutating func insert(objects : [Element], at index : Int) {
         var i = index+1
         for obj in objects {
-            self.safe(insert: obj, at: i)
+            self.insert(object : obj, at: i)
             i+=1
         }
     }

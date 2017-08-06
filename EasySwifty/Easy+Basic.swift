@@ -30,53 +30,16 @@ public struct FoundationRange {
     }
 }
 
-// MARK: - Dictionary
-
-public extension Dictionary {
-
-    public var jsonValue : String? {
-        get {
-            if let data = Data.dataWithObject(self) {
-                let string = data.stringValue()
-                return string
-            } else {
-                return nil
-            }
-        }
-    }
-
-    public mutating func safe(set object : Value?,forKey key :Key) {
-        guard object != nil else { return }
-        self[key]    = object
-    }
-
-    public mutating func safe(object key : Key) -> Value? {
-        return self[key]
-    }
-
-    public mutating func safe(remove key : Key) {
-        self.removeValue(forKey: key)
-    }
-
-    public mutating func contains(_ key : Key) -> Bool {
-        return safe(object: key) != nil
-    }
-
-
-}
-
 
 // MARK: - Date
 
 public extension Date {
 
     public static func dateFormatterTimeInterval(_ timeInterval : Double,tiemFormatter : String) -> String {
-
         let date                = Date(timeIntervalSince1970: timeInterval)
         let formatter           = DateFormatter()
         formatter.dateFormat    = tiemFormatter
         return  formatter.string(from: date as Date)
-
     }
 
 }

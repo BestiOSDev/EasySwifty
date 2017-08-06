@@ -39,17 +39,11 @@ public extension String {
 
     fileprivate func rangeIndex(from range : FoundationRange) -> Range<String.Index>? {
 
-        guard range.location <= self.length else {
-            return nil
-        }
-
-        guard range.sum <= self.length else {
-            return nil
-        }
+        guard range.location <= self.length else { return nil }
+        guard range.sum <= self.length else { return nil }
 
         let startIndex                  = self.index(self.startIndex, offsetBy: range.location)
         let endIndex                    = self.index(startIndex, offsetBy: range.length)
-
         let range                       = Range<String.Index>(startIndex..<endIndex)
 
         return range

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2D3A44811F37134500CD540B /* EasySwifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44731F37134500CD540B /* EasySwifty.swift */; };
 		2D3A44821F37134500CD540B /* Easy+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44741F37134500CD540B /* Easy+String.swift */; };
-		2D3A44831F37134500CD540B /* Easy+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44751F37134500CD540B /* Easy+Array.swift */; };
 		2D3A44841F37134500CD540B /* Easy+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44761F37134500CD540B /* Easy+CollectionView.swift */; };
 		2D3A44851F37134500CD540B /* Easy+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44771F37134500CD540B /* Easy+TableView.swift */; };
 		2D3A44861F37134500CD540B /* Easy+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44781F37134500CD540B /* Easy+UIView.swift */; };
@@ -22,6 +21,7 @@
 		2D3A448D1F37134500CD540B /* Easy+Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A447F1F37134500CD540B /* Easy+Basic.swift */; };
 		2D3A448E1F37134500CD540B /* Easy+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44801F37134500CD540B /* Easy+Data.swift */; };
 		2D3A44901F37148800CD540B /* Easy+GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A448F1F37148800CD540B /* Easy+GCD.swift */; };
+		2D3A44921F37195F00CD540B /* Easy+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44911F37195F00CD540B /* Easy+Collection.swift */; };
 		2DB78AB81F360BEE0091BA6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB78AB71F360BEE0091BA6D /* AppDelegate.swift */; };
 		2DB78ABA1F360BEE0091BA6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB78AB91F360BEE0091BA6D /* ViewController.swift */; };
 		2DB78ABD1F360BEE0091BA6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB78ABB1F360BEE0091BA6D /* Main.storyboard */; };
@@ -51,7 +51,6 @@
 /* Begin PBXFileReference section */
 		2D3A44731F37134500CD540B /* EasySwifty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasySwifty.swift; sourceTree = "<group>"; };
 		2D3A44741F37134500CD540B /* Easy+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+String.swift"; sourceTree = "<group>"; };
-		2D3A44751F37134500CD540B /* Easy+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+Array.swift"; sourceTree = "<group>"; };
 		2D3A44761F37134500CD540B /* Easy+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+CollectionView.swift"; sourceTree = "<group>"; };
 		2D3A44771F37134500CD540B /* Easy+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+TableView.swift"; sourceTree = "<group>"; };
 		2D3A44781F37134500CD540B /* Easy+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+UIView.swift"; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		2D3A447F1F37134500CD540B /* Easy+Basic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+Basic.swift"; sourceTree = "<group>"; };
 		2D3A44801F37134500CD540B /* Easy+Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+Data.swift"; sourceTree = "<group>"; };
 		2D3A448F1F37148800CD540B /* Easy+GCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+GCD.swift"; sourceTree = "<group>"; };
+		2D3A44911F37195F00CD540B /* Easy+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+Collection.swift"; sourceTree = "<group>"; };
 		2DB78AB41F360BEE0091BA6D /* EaseSwifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EaseSwifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DB78AB71F360BEE0091BA6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DB78AB91F360BEE0091BA6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +109,6 @@
 			children = (
 				2D3A44731F37134500CD540B /* EasySwifty.swift */,
 				2D3A44741F37134500CD540B /* Easy+String.swift */,
-				2D3A44751F37134500CD540B /* Easy+Array.swift */,
 				2D3A44761F37134500CD540B /* Easy+CollectionView.swift */,
 				2D3A44771F37134500CD540B /* Easy+TableView.swift */,
 				2D3A44781F37134500CD540B /* Easy+UIView.swift */,
@@ -122,6 +121,7 @@
 				2D3A447F1F37134500CD540B /* Easy+Basic.swift */,
 				2D3A44801F37134500CD540B /* Easy+Data.swift */,
 				2D3A448F1F37148800CD540B /* Easy+GCD.swift */,
+				2D3A44911F37195F00CD540B /* Easy+Collection.swift */,
 			);
 			name = EasySwifty;
 			path = ../../EasySwifty;
@@ -316,9 +316,9 @@
 				2D3A448B1F37134500CD540B /* Easy+NSObject.swift in Sources */,
 				2D3A44821F37134500CD540B /* Easy+String.swift in Sources */,
 				2D3A44881F37134500CD540B /* Easy+Color.swift in Sources */,
-				2D3A44831F37134500CD540B /* Easy+Array.swift in Sources */,
 				2D3A44861F37134500CD540B /* Easy+UIView.swift in Sources */,
 				2D3A44851F37134500CD540B /* Easy+TableView.swift in Sources */,
+				2D3A44921F37195F00CD540B /* Easy+Collection.swift in Sources */,
 				2DB78ABA1F360BEE0091BA6D /* ViewController.swift in Sources */,
 				2D3A448D1F37134500CD540B /* Easy+Basic.swift in Sources */,
 				2DB78AB81F360BEE0091BA6D /* AppDelegate.swift in Sources */,

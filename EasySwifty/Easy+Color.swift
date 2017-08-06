@@ -15,18 +15,11 @@ public extension UIColor {
     // 根据 RGB 生成一个颜色,透明度是可以设置 0.0 ~ 1.0
 
     public class func RGBAColor(_ red : CGFloat ,green : CGFloat , blue : CGFloat,alpha : CGFloat) -> UIColor {
-
-        let color = UIColor(red:(red/255.0), green: (green/255.0), blue: (blue/255.0), alpha: (alpha));
-
-        return color;
-
+        return UIColor(red:(red/255.0), green: (green/255.0), blue: (blue/255.0), alpha: (alpha))
     }
     // 根据 RGB 生成一个颜色,透明度是1.0
     public class func RGBColor(_ red : CGFloat ,green : CGFloat , blue : CGFloat) -> UIColor {
-
-        let color   = RGBAColor(red, green: green, blue: blue, alpha: 1.0);
-        return color;
-
+        return RGBAColor(red, green: green, blue: blue, alpha: 1.0)
     }
 
     /// 生成一个随机色
@@ -36,8 +29,13 @@ public extension UIColor {
         let green   = arc4random_uniform(255)
         let blue    = arc4random_uniform(255)
 
-        return UIColor.RGBColor(CGFloat(red), green: CGFloat(green), blue: CGFloat(blue))
+        return RGBColor(CGFloat(red), green: CGFloat(green), blue: CGFloat(blue))
 
+    }
+
+    /// 根据一个字符串生成一个 UIColor 透明度 1.0
+    public class  func colorWithHexString(_ hexString : String) -> UIColor {
+        return colorWithHexString(hexString, alpha: 1.0)
     }
 
     /// 根据一个字符串生成一个 UIColor 透明度 0.0~1.0
@@ -53,19 +51,13 @@ public extension UIColor {
         let rString         = cString.substring(to: cString.characters.index(cString.startIndex, offsetBy: 2))
         let gString         = cString.substring(from: cString.characters.index(cString.startIndex, offsetBy: 2)).substring(to: cString.characters.index(cString.startIndex, offsetBy: 2))
         let bString         = cString.substring(from: cString.characters.index(cString.startIndex, offsetBy: 4)).substring(to: cString.characters.index(cString.startIndex, offsetBy: 2))
-        var r:CUnsignedInt  = 0, g:CUnsignedInt = 0, b:CUnsignedInt = 0;
+        var r:CUnsignedInt  = 0, g:CUnsignedInt = 0, b:CUnsignedInt = 0
         Scanner(string: rString).scanHexInt32(&r)
         Scanner(string: gString).scanHexInt32(&g)
         Scanner(string: bString).scanHexInt32(&b)
         return UIColor(red: CGFloat(r) / 255.0, green:CGFloat(g) / 255.0, blue:CGFloat(b) / 255.0, alpha:CGFloat(alpha))
 
     }
-
-    /// 根据一个字符串生成一个 UIColor 透明度 1.0
-    public class  func colorWithHexString(_ hexString : String) -> UIColor {
-        return colorWithHexString(hexString, alpha: 1.0)
-    }
-
 
 
 }
