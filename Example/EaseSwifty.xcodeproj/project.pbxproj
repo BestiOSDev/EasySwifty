@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D3A44471F37081F00CD540B /* EasySwifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44391F37081F00CD540B /* EasySwifty.swift */; };
-		2D3A44481F37081F00CD540B /* Easy+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A443A1F37081F00CD540B /* Easy+String.swift */; };
-		2D3A44491F37081F00CD540B /* Easy+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A443B1F37081F00CD540B /* Easy+Array.swift */; };
-		2D3A444A1F37081F00CD540B /* Easy+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A443C1F37081F00CD540B /* Easy+CollectionView.swift */; };
-		2D3A444B1F37081F00CD540B /* Easy+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A443D1F37081F00CD540B /* Easy+TableView.swift */; };
-		2D3A444C1F37081F00CD540B /* Easy+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A443E1F37081F00CD540B /* Easy+UIView.swift */; };
-		2D3A444D1F37081F00CD540B /* Easy+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A443F1F37081F00CD540B /* Easy+MD5.swift */; };
-		2D3A444E1F37081F00CD540B /* Easy+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44401F37081F00CD540B /* Easy+Color.swift */; };
-		2D3A444F1F37081F00CD540B /* Easy+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44411F37081F00CD540B /* Easy+Foundation.swift */; };
-		2D3A44501F37081F00CD540B /* Easy+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44421F37081F00CD540B /* Easy+ScrollView.swift */; };
-		2D3A44511F37081F00CD540B /* Easy+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44431F37081F00CD540B /* Easy+NSObject.swift */; };
-		2D3A44521F37081F00CD540B /* Easy+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44441F37081F00CD540B /* Easy+UIImage.swift */; };
-		2D3A44531F37081F00CD540B /* Easy+Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44451F37081F00CD540B /* Easy+Basic.swift */; };
-		2D3A44541F37081F00CD540B /* Easy+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44461F37081F00CD540B /* Easy+Data.swift */; };
+		2D3A44641F370CD000CD540B /* EasySwifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44561F370CC600CD540B /* EasySwifty.swift */; };
+		2D3A44651F370CD300CD540B /* Easy+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44571F370CC600CD540B /* Easy+String.swift */; };
+		2D3A44661F370CD600CD540B /* Easy+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44581F370CC600CD540B /* Easy+Array.swift */; };
+		2D3A44671F370CD900CD540B /* Easy+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44591F370CC600CD540B /* Easy+CollectionView.swift */; };
+		2D3A44681F370CDB00CD540B /* Easy+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A445A1F370CC600CD540B /* Easy+TableView.swift */; };
+		2D3A44691F370CDE00CD540B /* Easy+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A445B1F370CC600CD540B /* Easy+UIView.swift */; };
+		2D3A446A1F370CE100CD540B /* Easy+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A445C1F370CC600CD540B /* Easy+MD5.swift */; };
+		2D3A446B1F370CE300CD540B /* Easy+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A445D1F370CC600CD540B /* Easy+Color.swift */; };
+		2D3A446C1F370CE700CD540B /* Easy+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A445E1F370CC600CD540B /* Easy+Foundation.swift */; };
+		2D3A446D1F370CEB00CD540B /* Easy+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A445F1F370CC600CD540B /* Easy+ScrollView.swift */; };
+		2D3A446E1F370CEF00CD540B /* Easy+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44601F370CC600CD540B /* Easy+NSObject.swift */; };
+		2D3A446F1F370CF100CD540B /* Easy+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44611F370CC600CD540B /* Easy+UIImage.swift */; };
+		2D3A44701F370CF400CD540B /* Easy+Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44621F370CC600CD540B /* Easy+Basic.swift */; };
+		2D3A44711F370CF700CD540B /* Easy+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A44631F370CC600CD540B /* Easy+Data.swift */; };
 		2DB78AB81F360BEE0091BA6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB78AB71F360BEE0091BA6D /* AppDelegate.swift */; };
 		2DB78ABA1F360BEE0091BA6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB78AB91F360BEE0091BA6D /* ViewController.swift */; };
 		2DB78ABD1F360BEE0091BA6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB78ABB1F360BEE0091BA6D /* Main.storyboard */; };
@@ -48,20 +48,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D3A44391F37081F00CD540B /* EasySwifty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasySwifty.swift; sourceTree = "<group>"; };
-		2D3A443A1F37081F00CD540B /* Easy+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+String.swift"; sourceTree = "<group>"; };
-		2D3A443B1F37081F00CD540B /* Easy+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+Array.swift"; sourceTree = "<group>"; };
-		2D3A443C1F37081F00CD540B /* Easy+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+CollectionView.swift"; sourceTree = "<group>"; };
-		2D3A443D1F37081F00CD540B /* Easy+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+TableView.swift"; sourceTree = "<group>"; };
-		2D3A443E1F37081F00CD540B /* Easy+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+UIView.swift"; sourceTree = "<group>"; };
-		2D3A443F1F37081F00CD540B /* Easy+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+MD5.swift"; sourceTree = "<group>"; };
-		2D3A44401F37081F00CD540B /* Easy+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+Color.swift"; sourceTree = "<group>"; };
-		2D3A44411F37081F00CD540B /* Easy+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+Foundation.swift"; sourceTree = "<group>"; };
-		2D3A44421F37081F00CD540B /* Easy+ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+ScrollView.swift"; sourceTree = "<group>"; };
-		2D3A44431F37081F00CD540B /* Easy+NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+NSObject.swift"; sourceTree = "<group>"; };
-		2D3A44441F37081F00CD540B /* Easy+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+UIImage.swift"; sourceTree = "<group>"; };
-		2D3A44451F37081F00CD540B /* Easy+Basic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+Basic.swift"; sourceTree = "<group>"; };
-		2D3A44461F37081F00CD540B /* Easy+Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Easy+Data.swift"; sourceTree = "<group>"; };
+		2D3A44561F370CC600CD540B /* EasySwifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySwifty.swift; sourceTree = "<group>"; };
+		2D3A44571F370CC600CD540B /* Easy+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+String.swift"; sourceTree = "<group>"; };
+		2D3A44581F370CC600CD540B /* Easy+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+Array.swift"; sourceTree = "<group>"; };
+		2D3A44591F370CC600CD540B /* Easy+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+CollectionView.swift"; sourceTree = "<group>"; };
+		2D3A445A1F370CC600CD540B /* Easy+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+TableView.swift"; sourceTree = "<group>"; };
+		2D3A445B1F370CC600CD540B /* Easy+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+UIView.swift"; sourceTree = "<group>"; };
+		2D3A445C1F370CC600CD540B /* Easy+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+MD5.swift"; sourceTree = "<group>"; };
+		2D3A445D1F370CC600CD540B /* Easy+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+Color.swift"; sourceTree = "<group>"; };
+		2D3A445E1F370CC600CD540B /* Easy+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+Foundation.swift"; sourceTree = "<group>"; };
+		2D3A445F1F370CC600CD540B /* Easy+ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+ScrollView.swift"; sourceTree = "<group>"; };
+		2D3A44601F370CC600CD540B /* Easy+NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+NSObject.swift"; sourceTree = "<group>"; };
+		2D3A44611F370CC600CD540B /* Easy+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+UIImage.swift"; sourceTree = "<group>"; };
+		2D3A44621F370CC600CD540B /* Easy+Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+Basic.swift"; sourceTree = "<group>"; };
+		2D3A44631F370CC600CD540B /* Easy+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Easy+Data.swift"; sourceTree = "<group>"; };
 		2DB78AB41F360BEE0091BA6D /* EaseSwifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EaseSwifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DB78AB71F360BEE0091BA6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DB78AB91F360BEE0091BA6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,23 +102,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D3A44381F37081F00CD540B /* EasySwity */ = {
+		2D3A44551F370CC600CD540B /* EasySwity */ = {
 			isa = PBXGroup;
 			children = (
-				2D3A44391F37081F00CD540B /* EasySwifty.swift */,
-				2D3A443A1F37081F00CD540B /* Easy+String.swift */,
-				2D3A443B1F37081F00CD540B /* Easy+Array.swift */,
-				2D3A443C1F37081F00CD540B /* Easy+CollectionView.swift */,
-				2D3A443D1F37081F00CD540B /* Easy+TableView.swift */,
-				2D3A443E1F37081F00CD540B /* Easy+UIView.swift */,
-				2D3A443F1F37081F00CD540B /* Easy+MD5.swift */,
-				2D3A44401F37081F00CD540B /* Easy+Color.swift */,
-				2D3A44411F37081F00CD540B /* Easy+Foundation.swift */,
-				2D3A44421F37081F00CD540B /* Easy+ScrollView.swift */,
-				2D3A44431F37081F00CD540B /* Easy+NSObject.swift */,
-				2D3A44441F37081F00CD540B /* Easy+UIImage.swift */,
-				2D3A44451F37081F00CD540B /* Easy+Basic.swift */,
-				2D3A44461F37081F00CD540B /* Easy+Data.swift */,
+				2D3A44561F370CC600CD540B /* EasySwifty.swift */,
+				2D3A44571F370CC600CD540B /* Easy+String.swift */,
+				2D3A44581F370CC600CD540B /* Easy+Array.swift */,
+				2D3A44591F370CC600CD540B /* Easy+CollectionView.swift */,
+				2D3A445A1F370CC600CD540B /* Easy+TableView.swift */,
+				2D3A445B1F370CC600CD540B /* Easy+UIView.swift */,
+				2D3A445C1F370CC600CD540B /* Easy+MD5.swift */,
+				2D3A445D1F370CC600CD540B /* Easy+Color.swift */,
+				2D3A445E1F370CC600CD540B /* Easy+Foundation.swift */,
+				2D3A445F1F370CC600CD540B /* Easy+ScrollView.swift */,
+				2D3A44601F370CC600CD540B /* Easy+NSObject.swift */,
+				2D3A44611F370CC600CD540B /* Easy+UIImage.swift */,
+				2D3A44621F370CC600CD540B /* Easy+Basic.swift */,
+				2D3A44631F370CC600CD540B /* Easy+Data.swift */,
 			);
 			name = EasySwity;
 			path = ../../EasySwity;
@@ -147,7 +147,7 @@
 		2DB78AB61F360BEE0091BA6D /* EaseSwifty */ = {
 			isa = PBXGroup;
 			children = (
-				2D3A44381F37081F00CD540B /* EasySwity */,
+				2D3A44551F370CC600CD540B /* EasySwity */,
 				2DB78AB71F360BEE0091BA6D /* AppDelegate.swift */,
 				2DB78AB91F360BEE0091BA6D /* ViewController.swift */,
 				2DB78ABB1F360BEE0091BA6D /* Main.storyboard */,
@@ -307,22 +307,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D3A444F1F37081F00CD540B /* Easy+Foundation.swift in Sources */,
-				2D3A44541F37081F00CD540B /* Easy+Data.swift in Sources */,
-				2D3A44511F37081F00CD540B /* Easy+NSObject.swift in Sources */,
-				2D3A44481F37081F00CD540B /* Easy+String.swift in Sources */,
-				2D3A444E1F37081F00CD540B /* Easy+Color.swift in Sources */,
-				2D3A44491F37081F00CD540B /* Easy+Array.swift in Sources */,
-				2D3A444C1F37081F00CD540B /* Easy+UIView.swift in Sources */,
-				2D3A444B1F37081F00CD540B /* Easy+TableView.swift in Sources */,
+				2D3A446C1F370CE700CD540B /* Easy+Foundation.swift in Sources */,
+				2D3A44711F370CF700CD540B /* Easy+Data.swift in Sources */,
+				2D3A446E1F370CEF00CD540B /* Easy+NSObject.swift in Sources */,
+				2D3A44651F370CD300CD540B /* Easy+String.swift in Sources */,
+				2D3A446B1F370CE300CD540B /* Easy+Color.swift in Sources */,
+				2D3A44661F370CD600CD540B /* Easy+Array.swift in Sources */,
+				2D3A44691F370CDE00CD540B /* Easy+UIView.swift in Sources */,
+				2D3A44681F370CDB00CD540B /* Easy+TableView.swift in Sources */,
 				2DB78ABA1F360BEE0091BA6D /* ViewController.swift in Sources */,
-				2D3A44531F37081F00CD540B /* Easy+Basic.swift in Sources */,
+				2D3A44701F370CF400CD540B /* Easy+Basic.swift in Sources */,
 				2DB78AB81F360BEE0091BA6D /* AppDelegate.swift in Sources */,
-				2D3A444A1F37081F00CD540B /* Easy+CollectionView.swift in Sources */,
-				2D3A44471F37081F00CD540B /* EasySwifty.swift in Sources */,
-				2D3A444D1F37081F00CD540B /* Easy+MD5.swift in Sources */,
-				2D3A44501F37081F00CD540B /* Easy+ScrollView.swift in Sources */,
-				2D3A44521F37081F00CD540B /* Easy+UIImage.swift in Sources */,
+				2D3A44671F370CD900CD540B /* Easy+CollectionView.swift in Sources */,
+				2D3A44641F370CD000CD540B /* EasySwifty.swift in Sources */,
+				2D3A446A1F370CE100CD540B /* Easy+MD5.swift in Sources */,
+				2D3A446D1F370CEB00CD540B /* Easy+ScrollView.swift in Sources */,
+				2D3A446F1F370CF100CD540B /* Easy+UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

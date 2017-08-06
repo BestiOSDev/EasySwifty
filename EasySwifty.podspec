@@ -2,14 +2,14 @@
 Pod::Spec.new do |s|
 
 s.name                 = 'EasySwity'
-s.version              = "0.0.3"
+s.version              = "0.0.4"
 s.license              = { :type => 'MIT', :file => 'LICENSE' }
 s.summary              = '对 Swift 的 Foundation 和 UIKit 进行了一定的拓展 ,使其代码更加简洁 复用性高'
 s.homepage             = 'https://github.com/ZhaoBingDong/EasySwifty'
 s.author               = { "ZhaoBingDong" => "dongzhaobing@bayekeji.com" }
-s.source                   = { :git => 'https://github.com/ZhaoBingDong/EasySwifty.git', :tag => "0.0.3" }
+s.source                   = { :git => 'https://github.com/ZhaoBingDong/EasySwifty.git', :tag => "0.0.4" }
 s.ios.deployment_target = '9.0'
-s.source_files = 'EasySwity/**/*'
+s.source_files = 'EasySwity/**/*{.swift}'
 s.requires_arc = true
 
 
