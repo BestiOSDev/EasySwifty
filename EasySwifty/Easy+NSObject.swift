@@ -101,11 +101,11 @@ extension NotificationName : ExpressibleByStringLiteral {
 public extension NotificationCenter {
 
     public class func post(_ name : NotificationName) {
-        NotificationCenter.post(name, object: nil)
+        post(name, object: nil)
     }
 
     public  class func post(_ name : NotificationName , object obj : Any?) {
-        NotificationCenter.post(name, object: obj, info: nil)
+        post(name, object: obj, info: nil)
     }
 
     public  class func post(_ name : NotificationName , object obj : Any?, info : [String : Any]?) {
@@ -113,7 +113,7 @@ public extension NotificationCenter {
     }
 
     public class func addObserver(forName name : NotificationName, object obj: Any?, using block: @escaping (Notification) -> Void) {
-        NotificationCenter.addObserver(forName: name, object: obj, queue: OperationQueue.main, using: block)
+        addObserver(forName: name, object: obj, queue: OperationQueue.main, using: block)
     }
 
     public class func addObserver(forName name : NotificationName, object obj: Any?, queue: OperationQueue?, using block: @escaping (Notification) -> Void) {
