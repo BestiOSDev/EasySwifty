@@ -14,19 +14,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     }
-
-    @objc func buttonClick(btn:UIButton,event:Any) {
-
-        if let indexPath =  btn.indexPath(at: UITableView(), forEvent: event) {
-            print(indexPath)
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

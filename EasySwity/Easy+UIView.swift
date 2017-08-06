@@ -138,12 +138,6 @@ public extension UIView {
         }
     }
 
-    /// 设置圆角半径
-    public func setCornerRadius(_ value : CGFloat) {
-        self.layer.cornerRadius     = value
-        self.layer.masksToBounds    = true
-    }
-
     public var cornerRadius : CGFloat {
         set {
             self.layer.cornerRadius = newValue
@@ -195,7 +189,7 @@ public extension UIView {
 
 
 // MARK: - UIButton
-public extension UIButton {
+@objc public extension UIButton {
 
     /**
      给按钮设置不同状态下的颜色
@@ -217,7 +211,7 @@ public extension UIButton {
 //        }
 //    }
 
-    public func indexPath(at tableView : UITableView, forEvent event : Any) -> IndexPath? {
+    @objc public func indexPathAtTableView(_ tableView : UITableView, forEvent event : NSObject) -> IndexPath? {
 
         // 获取 button 所在 cell 的indexPath
         let set = (event as! UIEvent).allTouches
@@ -243,7 +237,7 @@ public extension UIButton {
     //        }
     //    }
 
-    public func indexPath(at collectionView : UICollectionView, forEvent event : Any) -> IndexPath?  {
+   @objc public func indexPathAtCollectionView(_ collectionView : UICollectionView, forEvent event : NSObject) -> IndexPath?  {
 
         // 获取 button 所在 cell 的indexPath
         let set = (event as! UIEvent).allTouches
