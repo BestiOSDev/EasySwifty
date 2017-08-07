@@ -119,6 +119,7 @@ public extension UIView {
     /**
      从 XIB 加载一个 view
      */
+    @discardableResult
     public class func viewFromNib<T>() ->  T  {
         let className = self.className().components(separatedBy: ".").last
         let nib  = Bundle.main.loadNibNamed(className! as String, owner: nil, options: nil)?.last
@@ -175,6 +176,7 @@ public extension UIView {
         self.addGestureRecognizer(UITapGestureRecognizer(target: target, action: action!))
     }
 
+
     public var viewController : UIViewController?  {
         let target  = self.next
         while target != nil {
@@ -210,7 +212,7 @@ public extension UIView {
 //            print(indexPath)
 //        }
 //    }
-
+    @discardableResult
     @objc public func indexPathAtTableView(_ tableView : UITableView, forEvent event : NSObject) -> IndexPath? {
 
         // 获取 button 所在 cell 的indexPath
@@ -236,7 +238,7 @@ public extension UIView {
     //            print(indexPath)
     //        }
     //    }
-
+    @discardableResult
    @objc public func indexPathAtCollectionView(_ collectionView : UICollectionView, forEvent event : NSObject) -> IndexPath?  {
 
         // 获取 button 所在 cell 的indexPath
@@ -248,7 +250,6 @@ public extension UIView {
                 return indexPath!;
             }
         }
-
         return nil
 
     }

@@ -35,6 +35,7 @@ public struct FoundationRange {
 
 public extension Date {
 
+    @discardableResult
     public static func dateFormatterTimeInterval(_ timeInterval : Double,tiemFormatter : String) -> String {
         let date                = Date(timeIntervalSince1970: timeInterval)
         let formatter           = DateFormatter()

@@ -96,7 +96,8 @@ public extension UITableView {
 
 
 extension UITableView {
-
+    
+    @discardableResult
     func dequeueReusableCell<T: UITableViewCell>(forIndexPath indexPath: IndexPath) -> T where T : ViewNameReusable {
         guard let cell = dequeueReusableCell(withIdentifier: T.reuseIdentifier, for: indexPath) as? T else {
             fatalError("Could not dequeue cell with identifier: \(T.reuseIdentifier)")

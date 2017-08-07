@@ -27,6 +27,7 @@ public extension Dictionary {
         self[key]    = object
     }
 
+    @discardableResult
     public mutating func object(forKey key : Key) -> Value? {
         return self[key]
     }
@@ -34,7 +35,8 @@ public extension Dictionary {
     public mutating func remove(forKey key : Key) {
         self.removeValue(forKey: key)
     }
-
+    
+    @discardableResult
     public mutating func contains(_ key : Key) -> Bool {
         return object(forKey: key) != nil
     }
@@ -61,7 +63,8 @@ public extension Array {
 public extension Array where Element : Equatable {
 
     /// 安全获取数组中的元素
-    public func safe(at index : Int) -> Element? {
+    @discardableResult
+    public func object(at index : Int) -> Element? {
         guard !isEmpty else { return nil }
         guard (index <= self.count - 1) else { return nil }
         return  self[index]
@@ -152,7 +155,8 @@ public extension Array where Element : Equatable {
         self = array as! [Element]
     }
     /// 截取子数组从原始数组中 如果越界返回 []数组
-    public mutating  func subarray(with range: FoundationRange ) -> [Element]? {
+    @discardableResult
+    public mutating  func subarray(from range: FoundationRange ) -> [Element]? {
 
         if let subRange = rangeIndex(from: range) {
             let start   = subRange.lowerBound

@@ -11,6 +11,7 @@ import Foundation
 public extension String {
 
     /// 截取字符串到某个位置
+    @discardableResult
     public func subString(to index :Int) -> String? {
         if index > self.count { return nil }
         let text : String                       = self
@@ -20,6 +21,7 @@ public extension String {
     }
 
     /// 从某个位置开始截取字符串
+    @discardableResult
     public func subString(from index : Int) -> String? {
         if index > self.count { return nil }
         let text : String                       = self
@@ -29,6 +31,7 @@ public extension String {
     }
 
     /// 从某个范围截取字符串 比如 2这个位置 截取 3个长度
+    @discardableResult
     public func subString(from range : FoundationRange) -> String? {
         if  let range                       = rangeIndex(from: range) {
             return self.substring(with: range)
@@ -37,6 +40,7 @@ public extension String {
         }
     }
 
+    @discardableResult
     fileprivate func rangeIndex(from range : FoundationRange) -> Range<String.Index>? {
 
         guard range.location <= self.length else { return nil }
@@ -55,10 +59,12 @@ public extension String {
 
 public extension  String {
 
+    @discardableResult
     public func base64StringToData() -> Data? {
         return Data(base64Encoded: self)
     }
 
+    @discardableResult
     public func base64Encoding() -> String? {
         let data = self.data(using: .utf8, allowLossyConversion: true)
         if let base64String  = data?.base64EncodedString() {
@@ -68,6 +74,7 @@ public extension  String {
         }
     }
 
+    @discardableResult
     public func base64Decoding() -> String? {
         if let data = base64StringToData()  {
             return String(data: data, encoding: .utf8)
@@ -83,6 +90,7 @@ public extension  String {
         }
     }
     // md5加密
+    @discardableResult
     public func md5() -> String {
         let md5Str = StringProxy(proxy: self)
         return md5Str.md5
@@ -156,6 +164,7 @@ public extension String {
 public extension String {
 
     /// json 字符串转成 Array
+    @discardableResult
     public func  arrayValue() -> [Any] {
         let jsonObject = jsonValue()
         if let jsonArray = jsonObject  {
@@ -166,6 +175,7 @@ public extension String {
     }
 
     /// json 字符串转成 JSON数据格式
+    @discardableResult
     public func jsonValue() -> Any? {
         let data            = self.data(using: .utf8, allowLossyConversion: true)
         let jsonObject      = data?.jsonValue()
@@ -173,6 +183,7 @@ public extension String {
     }
 
     /// json 字符串转成 Dictionary
+    @discardableResult
     public func dictionaryValue() -> [String : Any] {
         let jsonObject          = jsonValue()
         if let jsonArray        = jsonObject  {

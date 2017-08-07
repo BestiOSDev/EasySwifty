@@ -55,6 +55,7 @@ extension UIImage {
     }
 
     /// 通过一个 UIColor 生成一个 UIImage
+    @discardableResult
     class func imageWithColor(_ color: UIColor) -> UIImage {
         let rect:CGRect          = CGRect(x: 0, y: 0, width: 1, height: 1)
         UIGraphicsBeginImageContext(rect.size)
