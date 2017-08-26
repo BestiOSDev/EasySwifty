@@ -17,6 +17,7 @@ public extension String {
         let text : String                       = self
         let startIndex : String.Index           = text.startIndex
         let subIndex : String.Index             = text.index(startIndex, offsetBy: index)
+        
         return text.substring(to: subIndex)
     }
 
@@ -92,7 +93,7 @@ public extension  String {
     // md5加密
     @discardableResult
     public func md5() -> String {
-        let md5Str = StringProxy(proxy: self)
+        let md5Str = SKStringProxy(proxy: self)
         return md5Str.md5
     }
 

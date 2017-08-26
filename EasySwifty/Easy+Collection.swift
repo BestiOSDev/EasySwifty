@@ -140,7 +140,7 @@ public extension Array where Element : Equatable {
         }
     }
     /// 在当前数组末尾追加元素
-    public mutating func insert(from array : [Element]) {
+    public mutating func insertObjects(from array : [Element]) {
         for obj in array {
             self.append(obj)
         }

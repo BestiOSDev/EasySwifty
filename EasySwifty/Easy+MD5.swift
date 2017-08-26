@@ -21,7 +21,7 @@
 
 import Foundation
 
-public struct StringProxy {
+public struct SKStringProxy {
     fileprivate let base: String
     init(proxy: String) {
         base = proxy
@@ -31,19 +31,19 @@ public struct StringProxy {
 /**
  A type that has Kingfisher extensions.
  */
-public protocol KingfisherCompatible {
-    associatedtype CompatibleType
-    var kf: CompatibleType { get }
+public protocol SKingfisherCompatible {
+    associatedtype SKCompatibleType
+    var skf: SKCompatibleType { get }
 }
 
-extension String: KingfisherCompatible {
-    public typealias CompatibleType = StringProxy
-    public var kf: CompatibleType {
-        return StringProxy(proxy: self)
+extension String : SKingfisherCompatible {
+    public typealias SKCompatibleType = SKStringProxy
+    public var skf: SKCompatibleType {
+        return SKStringProxy(proxy: self)
     }
 }
 
-extension StringProxy {
+extension SKStringProxy {
     var md5: String {
         if let data = base.data(using: .utf8, allowLossyConversion: true) {
 
