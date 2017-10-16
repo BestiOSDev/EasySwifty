@@ -196,7 +196,7 @@ public extension UIView {
     /**
      给按钮设置不同状态下的颜色
      */
-    public func setBackgroundColor(backgroundColor color: UIColor? ,forState state: UIControlState) {
+    public func setBackgroundColor(_ color: UIColor? ,forState state: UIControlState) {
         guard color != nil else { return }
         self.setBackgroundImage(UIImage.imageWithColor(color!), for: state)
     }
@@ -264,7 +264,6 @@ public extension ViewNameReusable where Self : UIView {
         return String(describing: self)
     }
 }
-
 
 // MARK: - UINavigationController
 extension UINavigationController {

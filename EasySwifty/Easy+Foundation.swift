@@ -9,4 +9,21 @@
 import Foundation
 import UIKit
 
+extension URL  {
+    public typealias StringLiteralType = String
+    public init(_ value: StringLiteralType) {
+        self = URL(string: value)!
+    }
+}
+
+extension UIImage {
+    public typealias StringLiteralType = String
+    public class func imageNamed(_ name : StringLiteralType?) -> UIImage? {
+        guard let _ = name else {
+            return nil
+        }
+        return UIImage(named: name!)
+    }
+}
+
 

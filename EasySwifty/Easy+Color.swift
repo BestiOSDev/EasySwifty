@@ -44,14 +44,14 @@ public extension UIColor {
 
         var cString:String  = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).uppercased()
         if (cString.hasPrefix("#")) {
-            cString         = cString.substring(from: cString.characters.index(cString.startIndex, offsetBy: 1))
+            cString         = cString.substring(from: cString.index(cString.startIndex, offsetBy: 1))
         }
-        if (cString.characters.count != 6) {
+        if (cString.count != 6) {
             return UIColor.gray
         }
-        let rString         = cString.substring(to: cString.characters.index(cString.startIndex, offsetBy: 2))
-        let gString         = cString.substring(from: cString.characters.index(cString.startIndex, offsetBy: 2)).substring(to: cString.characters.index(cString.startIndex, offsetBy: 2))
-        let bString         = cString.substring(from: cString.characters.index(cString.startIndex, offsetBy: 4)).substring(to: cString.characters.index(cString.startIndex, offsetBy: 2))
+        let rString         = cString.substring(to: cString.index(cString.startIndex, offsetBy: 2))
+        let gString         = cString.substring(from: cString.index(cString.startIndex, offsetBy: 2)).substring(to: cString.index(cString.startIndex, offsetBy: 2))
+        let bString         = cString.substring(from: cString.index(cString.startIndex, offsetBy: 4)).substring(to: cString.index(cString.startIndex, offsetBy: 2))
         var r:CUnsignedInt  = 0, g:CUnsignedInt = 0, b:CUnsignedInt = 0
         Scanner(string: rString).scanHexInt32(&r)
         Scanner(string: gString).scanHexInt32(&g)

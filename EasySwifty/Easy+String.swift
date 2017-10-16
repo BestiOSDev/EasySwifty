@@ -145,6 +145,7 @@ public extension String {
             let number                      = "^[0-9]*$"
             let regextestmobile             = NSPredicate(format:"SELF MATCHES %@",number)
             let isNumber                    = regextestmobile.evaluate(with: (self))
+            print(isNumber)
             return isNumber
         }
     }
