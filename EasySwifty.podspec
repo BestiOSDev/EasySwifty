@@ -1,17 +1,35 @@
+#
+# Be sure to run `pod lib lint EasySwifty.podspec' to ensure this is a
+# valid spec before submitting.
+#
+# Any lines starting with a # are optional, but their use is encouraged
+# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#
 
 Pod::Spec.new do |s|
+  s.name             = 'EasySwifty'
+  s.version          = '0.1.0'
+  s.summary          = 'A short description of EasySwifty.'
 
-s.name                 = 'EasySwifty'
-s.version              = "1.0.1"
-s.license              = { :type => 'MIT', :file => 'LICENSE' }
-s.summary              = '对 Swift 的 Foundation 和 UIKit 进行了一定的拓展 ,使其代码更加简洁 复用性高'
-s.homepage             = 'https://github.com/ZhaoBingDong/EasySwifty'
-s.author               = { "ZhaoBingDong" => "dongzhaobing@bayekeji.com" }
-s.source               = { :git => 'https://github.com/ZhaoBingDong/EasySwifty.git', :tag => "1.0.1" }
-s.ios.deployment_target = '10.0'
-# s.source_files = 'EasySwifty/EasySwifty.swift'
-s.source_files = 'EasySwifty/**/*{.swift}'
-s.requires_arc = true
+# This description is used to generate tags and improve search results.
+#   * Think: What does it do? Why did you write it? What is the focus?
+#   * Try to keep it short, snappy and to the point.
+#   * Write the description between the DESC delimiters below.
+#   * Finally, don't worry about the indent, CocoaPods strips it!
+
+s.description      = <<-DESC
+TODO: Add long description of the pod here.
+DESC
+
+s.homepage         = 'https://github.com/fmdb/EasySwifty'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'ZhaoBingDong' => 'dzb8818082@163.com' }
+s.source           = { :git => 'https://github.com/fmdb/EasySwifty.git', :tag => s.version.to_s }
+# s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
+s.ios.deployment_target = '9.0'
+s.source_files = 'EasySwifty/Classes/**/*'
 
 
+  
 end
